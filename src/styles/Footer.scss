@@ -1,0 +1,10 @@
+@import "../variables/Variable.scss";
+@import "../functions/Function.scss";
+
+.footer-wrapper {
+      @include funcFlex(row,center, center);
+      width: 100%;
+      height: 80px;
+      color: $whiteColor;
+      background-color: $blackColor;
+}

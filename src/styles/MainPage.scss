@@ -4,12 +4,36 @@
     @include funcFlex(column, center, center);
     width: 100%;
     height: auto;
-    
+
+
+
+
     h1 {
         color: $redColor;
     }
+    .coName1, .coName2, .coName3 {
+        font-size: 60px;
+        font-family: $titleFont;
+        font-weight: 900;
+
+
+
+    }
+    @include mobile {
+        .coName1 {
+            font-size: 40px;
+        }
+        .coName2 {
+            font-size: 30px;
+        }
+        .coName3 {
+            font-size: 30px;
+        }
+
+    }
     img {
-        width: 50%;
+        width: 80%;
         height: auto;
+        margin-top: 10px;
     }
 }

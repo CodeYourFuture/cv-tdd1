@@ -11,13 +11,19 @@
    background-color: $btnColor;
    border: none;
    border-radius: 8px;
-   color: $txtColor; 
+   color: $txtColor;
    font-size: 25px;
-    
+
 }
+// @mixin tablet {
+//     @media only screen and (max-width: 686px) {
+//         @content
+//     }
+
+// }
 
 @mixin mobile {
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 530px) {
         @content
     }
 }
