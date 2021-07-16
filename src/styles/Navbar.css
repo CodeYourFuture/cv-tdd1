@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #1a1a1a;
+}
+@media only screen and (max-width: 480px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e0000;
+  }
+}
+.navbar .navLink {
+  color: whiteColor;
+  font-size: 25px;
+  color: #e8e8e8;
+  text-decoration: none;
+  font-family: titleFont;
+  margin: 10px;
+}
+.navbar .links {
+  margin-right: 20px;
+}/*# sourceMappingURL=Navbar.css.map */

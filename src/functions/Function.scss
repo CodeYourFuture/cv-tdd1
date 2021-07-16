@@ -1,0 +1,23 @@
+@mixin funcFlex($direction,$justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin btnStyle($btnColor, $txtColor) {
+   width: 200px;
+   height: 40px;
+   background-color: $btnColor;
+   border: none;
+   border-radius: 8px;
+   color: $txtColor; 
+   font-size: 25px;
+    
+}
+
+@mixin mobile {
+    @media only screen and (max-width: 480px) {
+        @content
+    }
+}
