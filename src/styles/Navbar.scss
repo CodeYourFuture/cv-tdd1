@@ -1,25 +1,34 @@
 @import "../variables/Variable.scss";
 @import "../functions/Function.scss";
-.navbar {
-     @include funcFlex(row,flex-end, center);                      
-    width: 100%;
-    height: 80px;
-    background-color: $blackColor;
-    @include mobile {
-        @include funcFlex(row, center, center);
-        background-color: $redColor;
+@import "../styles/grid.scss";
+
+    .header {
+        background: dodgerblue;
+        overflow: hidden;
     }
-    
-    
+    .nav {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        align-items: center;
+        width: 1100px;
+        margin: auto;
+        img {
+            width: 120px;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+
+        }
+    }
     .navLink {
-        color: whiteColor;
-        font-size: 25px;
-        color: $whiteColor;
         text-decoration: none;
-        font-family: titleFont;
-        margin: 10px;
+        padding: 1.5rem;
+        color: #fff;
+        font-weight: bold;
+        transition: all .5s ease;
     }
-    .links {
-        margin-right: 20px;
+    .navLink:hover {
+        color: #000;
+        background: #fff;
     }
-}
