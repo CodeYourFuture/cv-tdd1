@@ -1,23 +1,3 @@
-@mixin container {
-    max-width: 100%;
-      padding-right: 15px;
-      padding-left: 15px;
-      margin-right: auto;
-      margin-left: auto;
-
-}
-@mixin row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-@mixin col1 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
 
 @mixin funcFlex($direction,$justify, $align) {
     display: flex;
@@ -36,19 +16,20 @@
    font-size: 25px;
 
 }
+@mixin mobile {
+    @media only screen and (max-width: 530px) {
+        @content
+    }
+}
 
-// @mixin tablet {
+// @mixin laptop {
 //     @media only screen and (max-width: 686px) {
 //         @content
 //     }
 
 // }
 
-// @mixin mobile {
-//     @media only screen and (max-width: 530px) {
-//         @content
-//     }
-// }
+
 @mixin breakpoint($point) {
     @if $point == mobile {
         @media screen and (min-width: 320px) {@content;}

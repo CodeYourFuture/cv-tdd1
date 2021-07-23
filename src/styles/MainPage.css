@@ -20,10 +20,18 @@
   color: #4e0000;
 }
 
-.mainPage .coName1, .mainPage .coName2, .mainPage .coName3 {
+.mainPage .coName1 {
+  font-size: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #4e0000;
+}
+
+.mainPage .coName2, .mainPage .coName3 {
   font-size: 60px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 900;
+  color: #4e0000;
 }
 
 @media only screen and (max-width: 530px) {
@@ -42,5 +50,47 @@
   width: 80%;
   height: auto;
   margin-top: 10px;
+}
+
+.txtt {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 6fr 2fr;
+      grid-template-columns: 2fr 6fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.txtt div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.txtt div h1 {
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 530px) {
+  .galery img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+}
+
+.adver {
+  padding-left: 20px;
 }
 /*# sourceMappingURL=MainPage.css.map */

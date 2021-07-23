@@ -3,20 +3,25 @@
 @import "../styles/grid.scss";
 
     .header {
-        background: dodgerblue;
+        background: black;
         overflow: hidden;
+        text-align: center;
     }
     .nav {
-        display: grid;
-        grid-template-columns: 6fr 6fr;
-        align-items: center;
-        width: 1100px;
-        margin: auto;
+        //@include funcFlex(row, center, center);
+        text-align: center;
+        height: 80px;
         img {
-            width: 120px;
+            width: 150px;
+            height: 100%;
+            padding: 3px;
         }
         ul {
             list-style: none;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: -o-flex;
             display: flex;
 
         }

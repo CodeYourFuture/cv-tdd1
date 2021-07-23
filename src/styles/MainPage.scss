@@ -11,14 +11,23 @@
     h1 {
         color: $redColor;
     }
-    .coName1, .coName2, .coName3 {
+    .coName1 {
+        font-size: 80px;
+        font-family: $titleFont;
+        font-weight: bold;
+        color: $redColor;
+    }
+    .coName2, .coName3 {
         font-size: 60px;
         font-family: $titleFont;
         font-weight: 900;
+        color: $redColor;
 
 
 
     }
+
+
     @include mobile {
         .coName1 {
             font-size: 40px;
@@ -36,4 +45,30 @@
         height: auto;
         margin-top: 10px;
     }
+}
+.txtt {
+display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    align-items: center;
+    div {
+        @include funcFlex(column, center, center);
+        h1 {
+
+            font-weight: normal;
+        }
+    }
+}
+.galery {
+
+
+    @include mobile {
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+    }
+}
+.adver {
+    padding-left: 20px;
 }
