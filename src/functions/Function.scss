@@ -16,23 +16,23 @@
    font-size: 25px;
 
 }
-@mixin mobile {
-    @media only screen and (max-width: 530px) {
-        @content
-    }
-}
+// @mixin mobile {
+//     @media only screen and (max-width: 530px) {
+//         @content
+//     }
+// }
 
 // @mixin laptop {
 //     @media only screen and (max-width: 686px) {
-//         @content
+//        @content
 //     }
-
-// }
+//  }
 
 
 @mixin breakpoint($point) {
     @if $point == mobile {
         @media screen and (min-width: 320px) {@content;}
+
     }
     @else if $point == laptop {
         @media screen and (min-width: 768px){@content;}

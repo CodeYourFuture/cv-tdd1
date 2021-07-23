@@ -13,16 +13,23 @@ import '../styles/Footer.css';
 function Home() {
 	return (
 		<div>
-			<div className="mainPage">
-				<h1>Welcome to</h1>
-				<div className="txtt">
-					<img src={screen4} alt="adv1" />
-					<div className="coName1">M&M</div>
-					<img src={screen5} alt="adv2" />
+			<div className="containner">
+				<div className="mainPage">
+					<h1>Welcome to</h1>
+					<div>
+						<div>
+							<img src={screen4} alt="adv1" />
+							<div className="coName1">M&M</div>
+							<img src={screen5} alt="adv2" />
+						</div>
+					</div>
 				</div>
 
-				<div className="coName2">CONSTRUCTION</div>
-				<div className="coName3">CO</div>
+				<div className="coName2">RENOVATION</div>
+				<div className="coName3">LTD</div>
+				<h2>Tell: 020 8445 5468</h2>
+				<h2>Mobile: 07453292010</h2>
+				<h2>Email: shahrouz74@yahoo.com</h2>
 			</div>
 			<div className="adver">
 				<div>
@@ -36,24 +43,20 @@ function Home() {
 					<h2>- Planning & Architectural Design</h2>
 				</div>
 			</div>
+			<div className="wrapGalery">
+				<div className="galery">
+					<img src={shahroz11} alt="img4" />
 
-			<div className="galery">
-				<img src={shahroz11} alt="img4" />
+					<img src={shahroz14} alt="img6" />
 
+					<img src={shahroz1} alt="img1" />
 
-				<img src={shahroz14} alt="img6" />
+					<img src={shahroz2} alt="img5" />
 
+					<img src={shahroz13} alt="img2" />
 
-				<img src={shahroz1} alt="img1" />
-
-
-				<img src={shahroz2} alt="img5" />
-
-
-				<img src={shahroz13} alt="img2" />
-
-
-				<img src={shahroz12} alt="img3" />
+					<img src={shahroz12} alt="img3" />
+				</div>
 			</div>
 
 			<div className="footer-wrapper">
